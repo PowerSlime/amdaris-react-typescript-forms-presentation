@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Amdaris / React Forms with TypeScript</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>👋</h1>
+        </section>
+
+        <section>
+            <h2>React forms with TypeScript</h2>
+            <p>When and where generics can be useful</p>
+        </section>
+
+        <section>
+            <section>
+                <h2>Case #1</h2>
+                <p>How we can catch compile-time errors in react components when API changes</p>
+                <p class="fragment">
+                    <a href="https://codesandbox.io/s/happy-https-zt6s0c?file=/src/App.tsx" target="_blank">Formik
+                        example</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>What else? 🤔</h2>
+                <p>
+                    <a href="https://react-hook-form.com/" target="_blank">React hook forms</a>.
+                </p>
+                <p>Check the <a href="https://react-hook-form.com/get-started#TypeScript" target="_blank">TypeScript</a>
+                    and
+                    <a href="https://react-hook-form.com/get-started#IntegratingControlledInputs" target="_blank">controlled
+                        inputs</a> sections
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Case #2</h2>
+                <p>Generic component for handling async logic</p>
+                <p class="fragment">
+                    <a href="https://codesandbox.io/s/beautiful-lovelace-kp0cje?file=/src/App.tsx" target="_blank">useAsync
+                        example</a>
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>🧡</h2>
+        </section>
+
+        <section>
+            <h2>❓</h2>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
+
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+  });
+</script>
+</body>
+</html>
